@@ -1,0 +1,19 @@
+zomato-cost-prediction/
+│
+├── data/
+│   └── zomato.csv
+│
+├── notebooks/
+│   └── EDA_and_Modeling.ipynb
+│
+├── app/
+│   ├── main.py
+│   ├── Zomato_model.pkl
+│   └── label_encoder.pkl
+│
+├── images/
+│   └── example_plot.png
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
