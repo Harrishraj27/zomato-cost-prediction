@@ -1,0 +1,21 @@
+sample = pd.DataFrame({
+    'online_order': ['No'],         # 1 if online order available, 0 otherwise
+    'book_table': ['Yes'],           # 1 if table booking option available, 0 otherwise
+    'Ratings': [4.5],               # Overall rating out of 5
+    'votes': [787],              # Total number of ratings
+    'location': ['Banashankari'],            # Neighborhood in which the restaurant is located (encoded value)
+    'rest_type': ['Casual Dining'],           # Restaurant type (encoded value)
+    'dish_liked': ['Churros, Cannelloni, Minestrone Soup, Hot Chocolate, Pink Sauce Pasta, Salsa, Veg Supreme Pizza'],         # Dishes people liked in the restaurant (encoded value)
+    'cuisines': ['North Indian, Mughlai, Chinese'],            # Food styles, separated by a comma (encoded value)
+    'Type': ['Buffet']      # Type of listing (encoded value)
+})
+
+# Encode the categorical features in the sample
+for col in categorical_cols:
+    sample[col] = label_encoder.fit_transform(sample[col].astype(str))
+
+# Make the prediction for the cost for two people for the specific restaurant
+predicted_cost_for_two = model.predict(sample)
+
+# Display the predicted cost for two people
+print("Predicted Cost for Two People:", predicted_cost_for_two[0])
