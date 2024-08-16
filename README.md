@@ -1,4 +1,4 @@
-# zomato-cost-prediction
+# Zomato-Cost-Prediction
 This project employs machine learning to predict dining costs for two people at restaurants listed in a Zomato dataset and to classify whether orders are placed online or offline.
 
 This project aims to predict the cost for two people at restaurants listed in the Zomato dataset and classify whether the orders were made online or offline. The project includes Exploratory Data Analysis (EDA) and Machine Learning modeling.
