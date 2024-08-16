@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 
-data = pd.read_csv("zomato.csv")
+data = pd.read_csv("https://www.kaggle.com/code/harrishraj27/zomato-cost-prediction-and-order-classification/input")
 data.head()
 
 def ratings(x):
